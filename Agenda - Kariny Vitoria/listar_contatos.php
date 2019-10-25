@@ -28,6 +28,8 @@
    		<tr>
    			<td>Código</td>
    			<td>Nome</td>
+            <td>Email</td>
+            <td>Telefone</td>
    			<td align='center'>Ações</td>
    		</tr>
    		<?php 
@@ -36,7 +38,9 @@
 
    			<tr>
    				<td><?php echo $dados['cod_contato']; ?></td>
-   				<td><a href="index.php?page=exibir_contato&contato=<?php echo $dados['cod_contato']; ?>"><?php echo $dados['nome']; ?></td>
+   	     		<td><a href=""><?php echo $dados['nome']; ?></td>
+               <td><a href=""><?php echo $dados['email']; ?></td>
+               <td><a href=""><?php echo $dados['telefone']; ?></td>
    					<td align='center'>
    						<div class="btn-group btn-group-sm" role="group" aria-label="Ações para os Contatos!">
    							<a href="dao/del_contato.php?contato=<?php echo $dados['cod_contato']; ?>" type="button" class="btn btn-default btn-danger" aria-label="Excluir Contato">
